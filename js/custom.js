@@ -1,7 +1,4 @@
 "use strict"; // Start of use strict
-
-
-
 function accrodion () {
     if ($('.accrodion-grp').length) {
         var accrodionGrp = $('.accrodion-grp');
@@ -20,12 +17,9 @@ function accrodion () {
                         $(this).parent().addClass('active');                    
                         $(this).parent().find('.accrodion-content').slideDown();        
                     };
-                    
-
                 });
             });
         });
-        
     };
 }
 
@@ -54,7 +48,6 @@ function thmMailchimp() {
         });
     };
 }
-
 
 function thmOwlCarousel() {
     if ($('.testimonials-style-one-carousel').length) {
@@ -123,7 +116,6 @@ function thmOwlCarousel() {
     };  
 }
 
-
 function galleryMasonaryLayout() {
     if ($('.masonary-layout').length) {
         $('.masonary-layout').isotope({
@@ -165,7 +157,6 @@ function galleryMasonaryLayout() {
     };
 }
 
-
 function thmbxSlider() {
     if ($('.btc-static-ticker-slider').length) {
         $('.btc-static-ticker-slider').bxSlider({
@@ -183,8 +174,6 @@ function thmbxSlider() {
     };
 }
 
-
-
 function stickyHeader() {
     if ($('.stricky').length) {
         var strickyScrollPos = 100;
@@ -200,7 +189,6 @@ function stickyHeader() {
         }
     };
 }
-
 
 function thmLightBox() {
     if ($('.img-popup').length) {
@@ -327,7 +315,6 @@ function mobileNavToggle () {
     };
 }
 
-
 function handlePreloader() {
     if($('.preloader').length){
         $('body').removeClass('active-preloader-ovh');
@@ -389,7 +376,6 @@ function pogressbarAnim () {
     }
 }
 
-
 function searchPopup () {
     if ($('.popup-with-zoom-anim').length) {
         $('.popup-with-zoom-anim').magnificPopup({
@@ -409,7 +395,6 @@ function searchPopup () {
         });
     }
 }
-
 
 function sideNavToggler () {
     if ($('.side-navigation').length) {
@@ -446,7 +431,6 @@ function graphTooltip() {
         $(".graph a").tooltip();
     }
 }
-
 
 function typeEffect () {
     if ($(".typed").length) {
@@ -502,3 +486,27 @@ jQuery(window).on('scroll', function() {
         stickyHeader();   
     })(jQuery);
 });
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });

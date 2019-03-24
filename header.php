@@ -41,10 +41,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse main-navigation mainmenu " id="main-nav-bar">
-                
                 <ul class="nav navbar-nav navigation-box">
                     <li class="current"> 
-                        <a href="#home">Home</a> 
+                        <a href="index.php">Home</a> 
                         <!--<ul class="sub-menu">
                             <li><a href="index.html">Home Page One</a></li>
                             <li><a href="index2.html">Home Page Two</a></li>
@@ -56,13 +55,13 @@
                     <li> <a href="#about">About</a> </li>
                     <li> <a href="#feature">Features</a> </li>
                     <!-- <li><a href="blog.html">News</a></li> -->
-                    <li> <a href="contact.php">Contact</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
                 </ul>                
             </div><!-- /.navbar-collapse -->
-            <div class="right-side-box">
-                <a href="#test-search" class="search-icon popup-with-zoom-anim bitmex-icon-search"></a><!--
-                --><a href="#hidden-sidebar" class="side-menu-icon bitmex-icon-menu side-nav-opener"></a>
-            </div><!-- /.right-side-box -->
+            <!--<div class="right-side-box">
+                <a href="#test-search" class="search-icon popup-with-zoom-anim bitmex-icon-search"></a>
+                <a href="#hidden-sidebar" class="side-menu-icon bitmex-icon-menu side-nav-opener"></a>
+            </div>right-side-box -->
         </div><!-- /.container -->
     </nav>   
 </header><!-- /.header -->

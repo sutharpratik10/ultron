@@ -283,16 +283,17 @@ if ($('#doughnut-chart').length) {
     var LineChartDemo = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ["One", "Two", "Three"],
+            labels: ["OneBounty", "Marketing", "Investers","Reserve", " Reserve for brokers", "Founders and team", "Crowd Sale"],
             datasets: [{
                 label: 'Feb 21',
-                backgroundColor: ["#EBA576", "#A26DB6", "#76ADEB"],
-                borderColor: ["#fff", "#fff", "#fff"],
-                data: [55, 100, 200]
+                backgroundColor: ["#35afce", "#fab915", "#ff505a", "#9400d3", "#6b6b6b", "#2cd498", "#3f4fc9"],
+                borderColor: ["#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff"],
+                data: [2,5,5,8,10,10,60]
             }]
         },
         options: {
             legend: {
+                display: false,
                 position: 'top',
                 labels: {
                     boxWidth: 50,
